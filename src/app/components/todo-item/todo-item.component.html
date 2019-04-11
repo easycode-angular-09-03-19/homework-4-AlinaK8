@@ -1,0 +1,8 @@
+<div class="card" style="width: 24rem; margin-bottom: 15px">
+    <div class="card-body" [ngClass] = "{'.bg-info': todo.completed }">
+        <p class="card-text">{{ todo?.id }}</p>
+      <p class="card-text">{{ todo?.text }}</p>
+      <button class="btn btn-success" (click)="onCompleteClick()">Complete</button>
+      <button class="btn btn-primary" style="margin-left: 10px" (click)="onDeleteClick()">Delete</button>
+    </div>
+  </div>
